@@ -1,0 +1,50 @@
+<h1 *ngIf="!disciplina.id">Cadastrar Disciplina</h1>
+<h1 *ngIf="disciplina.id">Editar Disciplina</h1>
+<form (submit)="salvar($event)" [formGroup]="meuForm" >
+  <div class="form-group">
+    <label for="name">Nome:</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="Digite seu nome" 
+      [(ngModel)]="disciplina.name"   formControlName="name" required/>
+      <div *ngIf="name.invalid && (name.dirty || name.touched)"
+          class="alert alert-danger">
+          <div *ngIf="name.errors.required">
+            Nome é obrigatório.
+          </div>
+          <div *ngIf="name.errors.minlength">
+            Nome deve ter pelo menos 4 caracteres.
+          </div>      
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="code">Código:</label>
+    <input type="text" class="form-control" id="code" name="code" placeholder="Digite o código da disciplina"
+    [(ngModel)]="disciplina.code" formControlName="code" required
+     />
+     <div *ngIf="code.invalid && (code.dirty || code.touched)"
+          class="alert alert-danger">
+          <div *ngIf="code.errors.required">
+            Código é obrigatório.
+          </div>
+          <div *ngIf="code.errors.minlength">
+              Código deve ter pelo menos 4 caracteres.
+          </div>      
+    </div>
+    </div>
+
+  <div class="form-group">
+    <label for="state">Alunos:</label>
+    <div class="lista-alunos">
+      <div class="aluno-box" key="aluno.id" *ngFor="let aluno of alunos">
+        <label class="checkbox-inline">
+          <input checked="{{isChecked(aluno)}}" type="checkbox" id="inlineCheckbox1" value="{{aluno.id}}" (change)="addAluno(aluno)"> {{ aluno.name }}
+        </label>
+      </div>
+    </div>
+  </div>   
+
+
+  <div class="botao">
+    <button class="btn btn-default">Voltar</button>
+    <button class="btn btn-primary">Cadsatrar</button>
+  </div>
+</form>  

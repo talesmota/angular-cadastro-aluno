@@ -1,0 +1,11 @@
+form {
+    margin: 20px 30px;
+  }
+  label[for="state"],
+  label[for="city"] {
+    width: 100%;
+  }
+  .botao {
+    float: right;
+    margin: 30px 0;
+  }
