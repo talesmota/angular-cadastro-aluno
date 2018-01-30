@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CadastrarDisciplinasComponent } from './cadastrar-disciplinas/cadastrar-disciplinas.component';
+import { CadastrarDisciplinaComponent } from './cadastrar-disciplina/cadastrar-disciplina.component';
 import { ListarDisciplinasComponent } from './listar-disciplinas/listar-disciplinas.component';
 import {HttpModule} from '@angular/http';
 import {DisciplinaService} from './service/disciplina.service';
@@ -16,7 +16,7 @@ import { RouterModule } from '@angular/router';
     RouterModule
   ],
   providers:[DisciplinaService],
-  declarations: [CadastrarDisciplinasComponent, ListarDisciplinasComponent ],
-  exports: [CadastrarDisciplinasComponent, ListarDisciplinasComponent],
+  declarations: [CadastrarDisciplinaComponent, ListarDisciplinasComponent ],
+  exports: [CadastrarDisciplinaComponent, ListarDisciplinasComponent],
 })
-export class DisciplinasModule { }
+export class DisciplinaModule { }

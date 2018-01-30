@@ -3,18 +3,19 @@ import { Component, OnInit } from '@angular/core';
 import {Disciplina} from '../disciplina';
 import {DisciplinaService} from '../service/disciplina.service';
 
-import {AlunoService} from '../../usuarios/service/aluno.service';
-import {Aluno} from '../../usuarios/aluno';
+import {AlunoService} from '../../aluno/service/aluno.service';
+import {Aluno} from '../../aluno/aluno';
 
 import { Router, ActivatedRoute } from '@angular/router';
 
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 @Component({
-  selector: 'app-cadastrar-disciplinas',
-  templateUrl: './cadastrar-disciplinas.component.html',
-  styleUrls: ['./cadastrar-disciplinas.component.css']
+  selector: 'app-cadastrar-disciplina',
+  templateUrl: './cadastrar-disciplina.component.html',
+  styleUrls: ['./cadastrar-disciplina.component.css']
 })
-export class CadastrarDisciplinasComponent implements OnInit {
+
+export class CadastrarDisciplinaComponent implements OnInit {
 
   private disciplina:Disciplina=new Disciplina();
   private alunos:Array<Aluno>=[];

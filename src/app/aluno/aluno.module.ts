@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ListarUsuariosComponent } from './listar-usuarios/listar-usuarios.component';
-import { CadastrarUsuariosComponent } from './cadastrar-usuarios/cadastrar-usuarios.component';
+import { ListarAlunosComponent } from './listar-alunos/listar-alunos.component';
+import { CadastrarAlunoComponent } from './cadastrar-aluno/cadastrar-aluno.component';
 import {AlunoService} from './service/aluno.service';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -17,7 +17,7 @@ import { RouterModule } from '@angular/router';
     RouterModule
   ],
   providers:[AlunoService],
-  declarations: [ListarUsuariosComponent, CadastrarUsuariosComponent ],
-  exports: [ListarUsuariosComponent, CadastrarUsuariosComponent],
+  declarations: [ListarAlunosComponent, CadastrarAlunoComponent ],
+  exports: [ListarAlunosComponent, CadastrarAlunoComponent],
 })
-export class UsuariosModule { }
+export class AlunoModule { }

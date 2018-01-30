@@ -5,8 +5,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
 
-import {UsuariosModule} from './usuarios/usuarios.module';
-import {DisciplinasModule} from './disciplinas/disciplinas.module';
+import { AlunoModule } from './aluno/aluno.module';
+import {DisciplinaModule} from './disciplina/disciplina.module';
 
 @NgModule({
   declarations: [
@@ -15,8 +15,8 @@ import {DisciplinasModule} from './disciplinas/disciplinas.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    UsuariosModule,
-    DisciplinasModule
+    AlunoModule,
+    DisciplinaModule
   ],
   providers: [],
   bootstrap: [AppComponent]

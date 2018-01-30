@@ -3,11 +3,11 @@ import {Aluno} from '../aluno';
 import {AlunoService} from '../service/aluno.service';
 
 @Component({
-  selector: 'app-listar-usuarios',
-  templateUrl: './listar-usuarios.component.html',
-  styleUrls: ['./listar-usuarios.component.css']
+  selector: 'app-listar-alunos',
+  templateUrl: './listar-alunos.component.html',
+  styleUrls: ['./listar-alunos.component.css']
 })
-export class ListarUsuariosComponent implements OnInit {
+export class ListarAlunosComponent implements OnInit {
 
   private alunos:Array<Aluno>=[];
   constructor(private alunoService:AlunoService) { }

@@ -13,12 +13,12 @@ import { Router } from '@angular/router';
 
 
 @Component({
-  selector: 'app-cadastrar-usuarios',
-  templateUrl: './cadastrar-usuarios.component.html',
-  styleUrls: ['./cadastrar-usuarios.component.css'],
+  selector: 'app-cadastrar-aluno',
+  templateUrl: './cadastrar-aluno.component.html',
+  styleUrls: ['./cadastrar-aluno.component.css'],
 
 })
-export class CadastrarUsuariosComponent implements OnInit {
+export class CadastrarAlunoComponent implements OnInit {
 
   private id:Number;
   private aluno:Aluno=new Aluno();

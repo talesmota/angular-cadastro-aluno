@@ -2,20 +2,19 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
-import { ListarUsuariosComponent } from './usuarios/listar-usuarios/listar-usuarios.component';
-import { CadastrarUsuariosComponent } from './usuarios/cadastrar-usuarios/cadastrar-usuarios.component';
+import { ListarAlunosComponent } from './aluno/listar-alunos/listar-alunos.component';
+import { CadastrarAlunoComponent } from './aluno/cadastrar-aluno/cadastrar-aluno.component';
 
-import {ListarDisciplinasComponent} from './disciplinas/listar-disciplinas/listar-disciplinas.component';
-import {CadastrarDisciplinasComponent} from './disciplinas/cadastrar-disciplinas/cadastrar-disciplinas.component';
+import {ListarDisciplinasComponent} from './disciplina/listar-disciplinas/listar-disciplinas.component';
+import {CadastrarDisciplinaComponent} from './disciplina/cadastrar-disciplina/cadastrar-disciplina.component';
 const routes: Routes = [
-  { path: 'listar-alunos', component: ListarUsuariosComponent },
-  { path: 'cadastrar-alunos', component: CadastrarUsuariosComponent },
-  { path: 'cadastrar-alunos/:id', component: CadastrarUsuariosComponent },
-  { path: 'remover-alunos/:id', component: CadastrarUsuariosComponent },
+  { path: 'listar-alunos', component: ListarAlunosComponent },
+  { path: 'cadastrar-alunos', component: CadastrarAlunoComponent },
+  { path: 'cadastrar-alunos/:id', component: CadastrarAlunoComponent },
 
   { path: 'listar-disciplinas', component: ListarDisciplinasComponent },
-  { path: 'cadastrar-disciplinas', component: CadastrarDisciplinasComponent },
-  { path: 'cadastrar-disciplinas/:id', component: CadastrarDisciplinasComponent },
+  { path: 'cadastrar-disciplinas', component: CadastrarDisciplinaComponent },
+  { path: 'cadastrar-disciplinas/:id', component: CadastrarDisciplinaComponent },
 ];
 
 @NgModule({
