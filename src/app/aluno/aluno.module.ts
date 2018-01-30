@@ -7,6 +7,7 @@ import {AlunoService} from './service/aluno.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import { RouterModule } from '@angular/router';
+import { AlunoRouteModule } from './/aluno-route.module';
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import { RouterModule } from '@angular/router';
     HttpModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule
+    RouterModule,
+    AlunoRouteModule
   ],
   providers:[AlunoService],
   declarations: [ListarAlunosComponent, CadastrarAlunoComponent ],

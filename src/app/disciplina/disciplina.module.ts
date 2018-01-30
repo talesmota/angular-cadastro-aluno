@@ -7,13 +7,15 @@ import {DisciplinaService} from './service/disciplina.service';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { DisciplinaRouteModule } from './/disciplina-route.module';
 @NgModule({
   imports: [
     CommonModule,
     HttpModule,
     FormsModule, 
     ReactiveFormsModule,
-    RouterModule
+    RouterModule,
+    DisciplinaRouteModule
   ],
   providers:[DisciplinaService],
   declarations: [CadastrarDisciplinaComponent, ListarDisciplinasComponent ],
